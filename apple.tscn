@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dobq0ukyba7hc"]
+
+[ext_resource type="Script" path="res://apple.gd" id="1_1cnbl"]
+[ext_resource type="Texture2D" uid="uid://sj6gmlv45v0s" path="res://apple.png" id="1_tesha"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ywaq6"]
+radius = 5.0
+
+[node name="Apple" type="Area2D"]
+script = ExtResource("1_1cnbl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tesha")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ywaq6")
